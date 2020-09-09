@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: ons sep 09, 2020  06:32
+- Last modified: ons sep 09, 2020  07:48
 - Sign: JN
 
 ## Description
@@ -14,9 +14,8 @@ by Allesina & Wilmes (Princeton University Press, 2019).
 Accompanying web page from the publisher is here:
 [https://github.com/CSB-book/CSB](https://github.com/CSB-book/CSB).
 
-A clone (ons  9 sep 2020 18:24:01) of the CSB repository is also present in
-this repository ([CSB](.CSB/)).  Expect some changes between this local copy
-and the original site.
+A clone of the CSB repository is also present in this repository as a
+submodule. Expect some changes between this local copy and the original site.
 
 ## First call (2020-09-08):
 
@@ -31,6 +30,8 @@ The course will consist of a series of meetings (physical and/or online) where
 we will go through the chapters in a recent text book in bioinformatics:
 "Computational Skills for Biologists - A Toolbox" by Stefano Allesina and
 Madlen Wilmes (Princeton University Press, 2019).
+
+Participants are expected to get a copy of the book on their own.
 
 Students are expected to solve the exercises in the book between each occasion,
 where we will discuss solutions, issues, and more.
