@@ -1,0 +1,6 @@
+*.swp
+JN/
+.ipynb_checkpoints/
+.Rhistory
+.Rproj.user
+.DS_Store
