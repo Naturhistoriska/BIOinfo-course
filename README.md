@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: ons sep 09, 2020  07:48
+- Last modified: tor sep 10, 2020  06:12
 - Sign: JN
 
 ## Description
@@ -14,8 +14,10 @@ by Allesina & Wilmes (Princeton University Press, 2019).
 Accompanying web page from the publisher is here:
 [https://github.com/CSB-book/CSB](https://github.com/CSB-book/CSB).
 
-A clone of the CSB repository is also present in this repository as a
-submodule. Expect some changes between this local copy and the original site.
+A fork of the CSB repository is also present in this repository as a
+submodule. This submodule (folder) is tracking
+<https://github.com/Naturhistoriska/CSB.git>. Expect some changes between this
+local copy and the original [CSB repository](https://github.com/CSB-book/CSB).
 
 ## First call (2020-09-08):
 
