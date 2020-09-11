@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: tor sep 10, 2020  06:12
+- Last modified: fre sep 11, 2020  01:08
 - Sign: JN
 
 ## Description
@@ -18,6 +18,12 @@ A fork of the CSB repository is also present in this repository as a
 submodule. This submodule (folder) is tracking
 <https://github.com/Naturhistoriska/CSB.git>. Expect some changes between this
 local copy and the original [CSB repository](https://github.com/CSB-book/CSB).
+
+## Course Slack-channel
+
+[Slack](https://slack.com)-workspace for the course:
+[https://BIOinfo-course-2020.slack.com](https://BIOinfo-course-2020.slack.com)
+(requires a Slack-account and a private invitation).
 
 ## First call (2020-09-08):
 
