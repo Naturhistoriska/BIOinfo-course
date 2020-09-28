@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: mån sep 28, 2020  01:11
+- Last modified: mån sep 28, 2020  01:55
 - Sign: JN
 
 ## Description
@@ -32,26 +32,23 @@ local copy and the original [CSB repository](https://github.com/CSB-book/CSB).
 | 2020-10-01 | 14:00--15:00 | NRM KÖL lunchroom + Zoom | Introduction | NA |
 | 2020-10-08 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Unix | 1 |
 | 2020-10-15 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Version control (git) | 2 |
-| ? | ? | ? + Zoom | Basic programming (Python) | 3 |
-| ? | ? | ? + Zoom | Writing good code (Python) | 4 |
-| ? | ? | ? + Zoom | Regular expressions (Python) | 5 |
-| ? | ? | ? + Zoom | Scientific computing (Python) | 6 |
-| ? | ? | ? + Zoom | Scientific typesetting (LaTeX) | 7 |
-| ? | ? | ? + Zoom | Statistical computing (R) | 8 |
-| ? | ? | ? + Zoom | Data wrangling and visualization (R) | 9 |
+| **2020-10-29** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Basic programming (Python) | 3 |
+| **2020-11-12** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Writing good code (Python) | 4 |
+| 2020-11-19 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Regular expressions (Python) | 5 |
+| **2020-12-03** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific computing (Python) | 6 |
+| 2020-12-10 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific typesetting (LaTeX) | 7 |
+| **?** | ? | ? + Zoom | Statistical computing (R) | 8 |
+| **?** | ? | ? + Zoom | Data wrangling and visualization (R) | 9 |
 | ? | ? | ? + Zoom | Relational data bases (SQL) | 10 |
 
 Note, all occasions (except the first: "Introduction") will be follow-up sessions where
 we will share problems, solutions, and experiences from participants after solving exercises
-in the mentioned chapters.
+in the mentioned chapters. For some dates (indicated in **bold**), there are two weeks in between
+the meetings.
 
 
-## First call (2020-09-08):
+## More detailed information
 
-Dear All,
-
-With short notice, I want to draw your attention to our literature course in
-bioinformatics, starting this fall (soon!).
 
 ### What:
 
@@ -99,7 +96,7 @@ on line.
 
 ### How to apply:
 
-Send me an e-mail (emailto:Johan.Nylander@nrm.se) before September 26. 
+Send me an e-mail (emailto:Johan.Nylander) before September 26. 
 
 Yours
 
