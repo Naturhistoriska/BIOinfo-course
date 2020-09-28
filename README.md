@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: mån sep 28, 2020  01:55
+- Last modified: mån sep 28, 2020  02:06
 - Sign: JN
 
 ## Description
@@ -29,14 +29,14 @@ local copy and the original [CSB repository](https://github.com/CSB-book/CSB).
 
 | Date | Time | Venue | Topic | Chapter |
 | --- | --- | --- | --- | --- |
-| 2020-10-01 | 14:00--15:00 | NRM KÖL lunchroom + Zoom | Introduction | NA |
-| 2020-10-08 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Unix | 1 |
-| 2020-10-15 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Version control (git) | 2 |
-| **2020-10-29** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Basic programming (Python) | 3 |
-| **2020-11-12** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Writing good code (Python) | 4 |
-| 2020-11-19 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Regular expressions (Python) | 5 |
-| **2020-12-03** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific computing (Python) | 6 |
-| 2020-12-10 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific typesetting (LaTeX) | 7 |
+| Oct 01 | 14:00--15:00 | NRM KÖL lunchroom + Zoom | Introduction | NA |
+| Oct 08 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Unix | 1 |
+| Oct 15 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Version control (git) | 2 |
+| **Oct 29** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Basic programming (Python) | 3 |
+| **Nov 12** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Writing good code (Python) | 4 |
+| Nov 19 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Regular expressions (Python) | 5 |
+| **Dec 03** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific computing (Python) | 6 |
+| Dec 10 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific typesetting (LaTeX) | 7 |
 | **?** | ? | ? + Zoom | Statistical computing (R) | 8 |
 | **?** | ? | ? + Zoom | Data wrangling and visualization (R) | 9 |
 | ? | ? | ? + Zoom | Relational data bases (SQL) | 10 |
@@ -46,9 +46,7 @@ we will share problems, solutions, and experiences from participants after solvi
 in the mentioned chapters. For some dates (indicated in **bold**), there are two weeks in between
 the meetings.
 
-
 ## More detailed information
-
 
 ### What:
 
@@ -97,9 +95,4 @@ on line.
 ### How to apply:
 
 Send me an e-mail (emailto:Johan.Nylander) before September 26. 
-
-Yours
-
-Johan Nylander
-
 
