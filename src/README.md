@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: ons sep 09, 2020  07:39
+- Last modified: tor okt 08, 2020  12:11
 - Sign: JN
 
 ## Description
@@ -11,4 +11,4 @@ Source for the literature course in Bioinformatics for Biologists at
 
 ## Files
 
-
+- `prog` - Program (written in Perl) for practicing redirection of stderr and stdout

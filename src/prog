@@ -1,0 +1,74 @@
+#!/usr/bin/env perl 
+#===============================================================================
+=pod
+
+=head2
+
+         FILE: prog
+
+        USAGE: ./prog [--sleep <sec>] [--iterations <n>] [--help] [--noverbose]
+
+  DESCRIPTION: prints text to stdout and stderr
+
+      OPTIONS: -s, --sleep <sec>      where <sec> are number of seconds between each
+                                      printed line. Default (if no arguments) is 1.
+
+               -m, --iterations <n>   do the printing maximum <n> times. Default is 300.
+
+               -h, --help             show the help message
+
+               -v, --verbose          show progress printing. '--noverbose' works too.
+
+ REQUIREMENTS: Standard module Getopt::Long for parsing arguments
+
+         BUGS: ---
+
+        NOTES: ---
+
+       AUTHOR: Johan Nylander (JN), johan.nylander@{nbis,nrm}.se
+
+      COMPANY: NBIS/NRM
+
+      VERSION: 1.0
+
+      CREATED: 03/26/2014 09:40:49 AM
+
+     REVISION: 09/12/2014 10:30:45 AM 
+
+=cut
+
+#===============================================================================
+
+use strict;
+use warnings;
+use Getopt::Long;
+
+$| = 1; # Do not buffer stdout
+
+my $max     = 7200; # Set an upper limit to avoid too long processes
+my $iter    = 300; 
+my $sleep   = 1;
+my $VERBOSE = 1;
+my $help;
+
+GetOptions(
+    "sleep=i"     => \$sleep,
+    "iteration=i" => \$iter,
+    "verbose!"    => \$VERBOSE,
+    "help"        => sub { print "Usage $0 [--sleep <sec>] [--iterations <n>] [--help] [--noverbose]\n"; exit(0); },
+);
+
+if (($iter * $sleep) > $max) {
+    die "\nProcess will take more than $max seconds. Try to adjust --iterations=$iter and/or --sleep=$sleep to get below that number.\n";
+}
+else {
+    my $i = 1;
+    while ($i <= $iter) {
+        print STDERR "This line is the progress printing: Doing iteration $i\n" if ($VERBOSE);
+        my $r = rand();
+        print STDOUT "This line show the very important result: $r\n";
+        $i++;
+        sleep $sleep;
+    }
+}
+
