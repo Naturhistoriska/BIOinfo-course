@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: tor okt 15, 2020  09:28
+- Last modified: tor okt 15, 2020  09:39
 - Sign: JN
 
 ## Description
@@ -19,7 +19,7 @@ submodule. This submodule (folder) is tracking
 <https://github.com/Naturhistoriska/CSB.git>. Expect some changes between this
 local copy and the original [CSB repository](https://github.com/CSB-book/CSB).
 
-To clone this repository, including the CSB submodule, use this coomand:
+To clone the BIOinfo-course repository, including the CSB submodule, use this command:
 
     git clone --recurse-submodules https://github.com/Naturhistoriska/BIOinfo-course.git
 
