@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: ons sep 09, 2020  07:15
+- Last modified: tor nov 12, 2020  03:34
 - Sign: JN
 
 ## Description
@@ -8,6 +8,8 @@
 Jupyter notebooks for the literature course in Bioinformatics for Biologists at
 [NRM](https://www.nrm.se/) given in the fall 2020.
 
+For presentation material (notebooks and html slides), see the
+[slides](../slides) folder.
 
 ## Files
 

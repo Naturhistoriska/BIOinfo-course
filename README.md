@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: tor okt 15, 2020  09:39
+- Last modified: tor nov 12, 2020  03:47
 - Sign: JN
 
 ## Description
@@ -14,12 +14,13 @@ by Allesina & Wilmes (Princeton University Press, 2019).
 Accompanying web page from the publisher is here:
 [https://github.com/CSB-book/CSB](https://github.com/CSB-book/CSB).
 
-A fork of the CSB repository is also present in this repository as a
-submodule. This submodule (folder) is tracking
+A fork of the CSB repository is also present in this repository as a submodule.
+This submodule (folder) is tracking
 <https://github.com/Naturhistoriska/CSB.git>. Expect some changes between this
 local copy and the original [CSB repository](https://github.com/CSB-book/CSB).
 
-To clone the BIOinfo-course repository, including the CSB submodule, use this command:
+To clone the BIOinfo-course repository, including the CSB submodule, use this
+command:
 
     git clone --recurse-submodules https://github.com/Naturhistoriska/BIOinfo-course.git
 
@@ -45,10 +46,18 @@ To clone the BIOinfo-course repository, including the CSB submodule, use this co
 | **?** | ? | ? + Zoom | Data wrangling and visualization (R) | 9 |
 | ? | ? | ? + Zoom | Relational data bases (SQL) | 10 |
 
-Note, all occasions (except the first: "Introduction") will be follow-up sessions where
-we will share problems, solutions, and experiences from participants after solving exercises
-in the mentioned chapters. For some dates (indicated in **bold**), there are two weeks in between
-the meetings.
+Note, all occasions (except the first: "Introduction") will be follow-up
+sessions where we will share problems, solutions, and experiences from
+participants after solving exercises in the mentioned chapters. For some dates
+(indicated in **bold**), there are two weeks in between the meetings.
+
+## Presentation material (slides)
+
+Presentation material (jupyter notebooks, `.ipynb`) and slides (`.html`) are
+available in the [slides](slides) folder. Clone the BIOinfo-course repository
+and open the files locally (in jupyter or web browser) for best experience.
+
+---
 
 ## More detailed information
 
@@ -98,5 +107,5 @@ on line.
 
 ### How to apply:
 
-Send me an e-mail (emailto:Johan.Nylander) before September 26. 
+Send me an e-mail (emailto:Johan.Nylander) before September 26.
 
