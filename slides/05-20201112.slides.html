@@ -13295,8 +13295,9 @@ long name.</p>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fixation at gen&quot;</span><span class="p">,</span> <span class="n">num_generations</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Counts&quot;</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">genotype_counts</span><span class="p">)</span>
-            <span class="n">fixation</span> <span class="o">==</span> <span class="kc">True</span>
-            <span class="k">break</span>
+            <span class="n">fixation</span> <span class="o">==</span> <span class="kc">True</span>  <span class="c1"># Bug here! This expression evaluates to 1 (does nothing!)</span>
+            <span class="k">break</span>             <span class="c1"># The bug is, however, saved by using break!</span>
+            <span class="c1"># fixation = True # This would have been correct (and delete the two rows above)</span>
         <span class="n">my_pop</span> <span class="o">=</span> <span class="n">reproduce_population</span><span class="p">(</span><span class="n">my_pop</span><span class="p">)</span>
         <span class="n">num_generations</span> <span class="o">=</span> <span class="n">num_generations</span> <span class="o">+</span> <span class="mi">1</span>
 </pre></div>
