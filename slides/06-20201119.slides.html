@@ -13206,19 +13206,6 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13235,20 +13222,7 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="File-bee_list.txt">File <code>bee_list.txt</code><a class="anchor-link" href="#File-bee_list.txt">&#182;</a></h1>
-<pre><code>$ head -4 bee_list.txt
-Scientific Name Taxon Author    tsn
-Alocandrena porteri Michener, 1986  752055
-Ancylandrena atoposoma  (Cockerell, 1934)   654122
-Ancylandrena koebelei   (Timberlake, 1951)  654123</code></pre>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Extract-Year-from-bee_list.txt">Extract Year from <code>bee_list.txt</code><a class="anchor-link" href="#Extract-Year-from-bee_list.txt">&#182;</a></h1>
+<h2 id="Extract-Year-from-file-bee_list.txt">Extract Year from file bee_list.txt<a class="anchor-link" href="#Extract-Year-from-file-bee_list.txt">&#182;</a></h2>
 <pre><code>Scientific Name Taxon Author    tsn
 Alocandrena porteri Michener, 1986  752055
 Ancylandrena atoposoma  (Cockerell, 1934)   654122
@@ -13296,12 +13270,21 @@ Ancylandrena koebelei   (Timberlake, 1951)  654123</code></pre>
 
 </div>
 </div>
-</div></section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Using <code>python</code></p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+<h2 id="Common-to-all">Common to all<a class="anchor-link" href="#Common-to-all">&#182;</a></h2><h4 id="To-match:">To match:<a class="anchor-link" href="#To-match:">&#182;</a></h4><p><code>/regex/</code></p>
+<p><code>m/regex/</code></p>
+<h4 id="To-search-(match)-and-replace:">To search (match) and replace:<a class="anchor-link" href="#To-search-(match)-and-replace:">&#182;</a></h4><p><code>s/regex/replacement/</code></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-Python">Using Python<a class="anchor-link" href="#Using-Python">&#182;</a></h2><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
 <span class="n">rexp</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\(?[\w\s,\.\-\&amp;]*,\s(\d{4})\)?&#39;</span><span class="p">)</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;bee_list.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
@@ -13316,16 +13299,7 @@ Ancylandrena koebelei   (Timberlake, 1951)  654123</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="This-didn't-work-for-me">This didn't work for me<a class="anchor-link" href="#This-didn't-work-for-me">&#182;</a></h4><div class="highlight"><pre><span></span>$ python -c <span class="s2">&quot;import re,sys;print(re.search(r&#39;(\d{4})&#39;,sys.stdin.read()).group())&quot;</span> &lt; bee_list.txt
-</pre></div>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Neither-did-this">Neither did this<a class="anchor-link" href="#Neither-did-this">&#182;</a></h4><div class="highlight"><pre><span></span>$ python -c <span class="s2">&quot;import sys,re;[sys.stdout.write(re.search(r&#39;(\d{4})&#39;,line).group(1)) for line in sys.stdin]&quot;</span> &lt; bee_list.txt
+<h4 id="This-one-liner-didn't-work-for-me">This one liner didn't work for me<a class="anchor-link" href="#This-one-liner-didn't-work-for-me">&#182;</a></h4><div class="highlight"><pre><span></span>$ python -c <span class="s2">&quot;import sys,re;[sys.stdout.write(re.search(r&#39;(\d{4})&#39;,line).group(1)) for line in sys.stdin]&quot;</span> &lt; bee_list.txt
 </pre></div>
 
 </div>
@@ -13334,7 +13308,7 @@ Ancylandrena koebelei   (Timberlake, 1951)  654123</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.4.2-Metacharacters-(p.-168)">5.4.2 Metacharacters (p. 168)<a class="anchor-link" href="#5.4.2-Metacharacters-(p.-168)">&#182;</a></h1><p>Add to the list:</p>
+<h2 id="5.4.2-Metacharacters-(p.-168)">5.4.2 Metacharacters (p. 168)<a class="anchor-link" href="#5.4.2-Metacharacters-(p.-168)">&#182;</a></h2><p>Add to the list:</p>
 <ul>
 <li><p><code>\S</code> - not a white space (<em>cf.</em> <code>\s</code>)</p>
 </li>
@@ -13349,30 +13323,35 @@ Ancylandrena koebelei   (Timberlake, 1951)  654123</code></pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.4.3-Sets-(p.-169)-(See-also-p.-177)">5.4.3 Sets (p. 169) (See also p. 177)<a class="anchor-link" href="#5.4.3-Sets-(p.-169)-(See-also-p.-177)">&#182;</a></h1><p>One way general approach to avoid (some) issues: <strong>Use a middle step</strong> (also known as XXXX)!</p>
+<h2 id="5.4.3-Sets-(p.-169)-(See-also-p.-177)">5.4.3 Sets (p. 169) (See also p. 177)<a class="anchor-link" href="#5.4.3-Sets-(p.-169)-(See-also-p.-177)">&#182;</a></h2><p>One way general approach to avoid (some) issues: <strong>Use a middle step</strong>!</p>
 <p>Instead of:</p>
 
-<pre><code>re.search(r"GATC", my_unknown_DNA_string)
+<pre><code>re.search(r"GATC", my_unknown_DNA_string)</code></pre>
 
-</code></pre>
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>use a "decorator":</p>
 
 <pre><code>re.search(r"GATC", my_unknown_DNA_string.upper())</code></pre>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.4.4-Quantifiers-(p.-171)">5.4.4 Quantifiers (p. 171)<a class="anchor-link" href="#5.4.4-Quantifiers-(p.-171)">&#182;</a></h1><p>Greedy vs non-greedy matching -- major source of error!</p>
+<h2 id="5.4.4-Quantifiers-(p.-171)">5.4.4 Quantifiers (p. 171)<a class="anchor-link" href="#5.4.4-Quantifiers-(p.-171)">&#182;</a></h2><p>Greedy vs non-greedy matching -- major source of error!</p>
 
 </div>
 </div>
-</div></section></section><section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;.*\s&quot;</span><span class="p">,</span> <span class="s2">&quot;once upon a time&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
@@ -13382,10 +13361,30 @@ Ancylandrena koebelei   (Timberlake, 1951)  654123</code></pre>
 </div>
 </div>
 
-</div></section></section><section><section>
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;once upon a &#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;.*?\s&quot;</span><span class="p">,</span> <span class="s2">&quot;once upon a time&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
@@ -13395,12 +13394,39 @@ Ancylandrena koebelei   (Timberlake, 1951)  654123</code></pre>
 </div>
 </div>
 
-</div></section></section><section><section>
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;once &#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.5-Functions-of-the-re-module-(p.175)">5.5 Functions of the <code>re</code> module (p.175)<a class="anchor-link" href="#5.5-Functions-of-the-re-module-(p.175)">&#182;</a></h1><p>All examples up to here where used with <code>re.search()</code> --- and with matches!</p>
+<h2 id="5.5-Functions-of-the-re-module-(p.175)">5.5 Functions of the <code>re</code> module (p.175)<a class="anchor-link" href="#5.5-Functions-of-the-re-module-(p.175)">&#182;</a></h2><p>All examples up to here where used with <code>re.search()</code> --- and with matches!</p>
 <p><strong>Remember</strong> if no match, <code>re.search()</code> returns <code>None</code>, an this character type does not have an attribute <code>.group()</code>:</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <div class="highlight"><pre><span></span>&gt;&gt;&gt; match.group<span class="o">()</span>
 Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
   File <span class="s2">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in &lt;module&gt;
@@ -13409,11 +13435,11 @@ AttributeError: <span class="s1">&#39;NoneType&#39;</span> object has no attribu
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.5-Functions-of-the-re-module-(p.175)">5.5 Functions of the <code>re</code> module (p.175)<a class="anchor-link" href="#5.5-Functions-of-the-re-module-(p.175)">&#182;</a></h1><p><strong>Test</strong> if you got a match. For example:</p>
+<p><strong>Test</strong> if you got a match. For example:</p>
 <div class="highlight"><pre><span></span><span class="n">my_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">reg</span><span class="p">,</span> <span class="n">target_string</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">my_match</span><span class="p">:</span>
     <span class="k">print</span><span class="p">(</span><span class="n">my_match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
@@ -13425,7 +13451,7 @@ AttributeError: <span class="s1">&#39;NoneType&#39;</span> object has no attribu
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.5-Functions-of-the-re-module-(p.175)">5.5 Functions of the <code>re</code> module (p.175)<a class="anchor-link" href="#5.5-Functions-of-the-re-module-(p.175)">&#182;</a></h1><p>Similar issue with <code>re.findall()</code>. It returns a list (empty or not):</p>
+<p>Similar issue with <code>re.findall()</code>. It returns a list (empty or not):</p>
 <div class="highlight"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Pepes bodega&#39;</span><span class="p">,</span> <span class="n">my_DNA_string</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">my_list</span><span class="p">:</span>
     <span class="c1"># do something</span>
@@ -13437,7 +13463,7 @@ AttributeError: <span class="s1">&#39;NoneType&#39;</span> object has no attribu
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.5-Functions-of-the-re-module-(p.175)">5.5 Functions of the <code>re</code> module (p.175)<a class="anchor-link" href="#5.5-Functions-of-the-re-module-(p.175)">&#182;</a></h1><p><code>re.finditer()</code> on the other hand, returns a "callable_iterator object" (which may be empty or not), but the object does not evaluate to <code>False</code> or <code>None</code>.</p>
+<p><code>re.finditer()</code> on the other hand, returns a "callable_iterator object" (which may be empty or not), but the object does not evaluate to <code>False</code> or <code>None</code>.</p>
 <div class="highlight"><pre><span></span><span class="n">my_iter</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Pepes bodega&#39;</span><span class="p">,</span> <span class="n">my_DNA_string</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">my_iter</span><span class="p">:</span> <span class="c1"># This will be True even without a match!</span>
     <span class="c1"># do something</span>
@@ -13449,7 +13475,7 @@ AttributeError: <span class="s1">&#39;NoneType&#39;</span> object has no attribu
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>One solution: Cast the iterable to a list, AND, do a copy before calling <code>len()</code>!</p>
+<p><strong>One solution</strong>: Cast the iterable to a list, AND, do a copy before calling <code>len()</code>!</p>
 <div class="highlight"><pre><span></span><span class="n">my_iter</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Pepes bodega&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;ACGTACGT&#39;</span><span class="p">)</span>
 <span class="n">my_iter</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">my_iter</span><span class="p">)</span> <span class="c1"># This is needed since len() &quot;consumes&quot; the iterable!</span>
 <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">my_iter</span><span class="p">)):</span>
@@ -13465,7 +13491,7 @@ AttributeError: <span class="s1">&#39;NoneType&#39;</span> object has no attribu
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_iter</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;Pepes bodega&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;ACGTACGT&#39;</span><span class="p">)</span>
@@ -13502,7 +13528,7 @@ AttributeError: <span class="s1">&#39;NoneType&#39;</span> object has no attribu
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_iter</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ACGT&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;ACGTACGT&#39;</span><span class="p">)</span>
@@ -13540,7 +13566,7 @@ ACGT
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_iter</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ACGT&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;ACGTACGT&#39;</span><span class="p">)</span>
@@ -13569,7 +13595,7 @@ ACGT
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-61-a71851ba4544&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-8-a71851ba4544&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-intense-fg ansi-bold">      1</span> my_iter <span class="ansi-blue-fg">=</span> re<span class="ansi-blue-fg">.</span>finditer<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">r&#39;ACGT&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">r&#39;ACGTACGT&#39;</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-red-fg">#my_iter = list(my_iter) # This is needed since len() &#34;consumes&#34; the iterable!</span>
 <span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">if</span> len<span class="ansi-blue-fg">(</span>my_iter<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
@@ -13586,7 +13612,7 @@ ACGT
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_iter</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ACGT&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;ACGTACGT&#39;</span><span class="p">)</span>
@@ -13615,7 +13641,7 @@ ACGT
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[62]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13632,7 +13658,7 @@ ACGT
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_iter</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ACGT&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;ACGTACGT&#39;</span><span class="p">)</span>
@@ -13662,7 +13688,7 @@ ACGT
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13681,7 +13707,8 @@ ACGT
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.5-Functions-of-the-re-module-(p.175)">5.5 Functions of the <code>re</code> module (p.175)<a class="anchor-link" href="#5.5-Functions-of-the-re-module-(p.175)">&#182;</a></h1><p>Compare</p>
+<h2 id="5.5-Functions-of-the-re-module-(p.175)">5.5 Functions of the <code>re</code> module (p.175)<a class="anchor-link" href="#5.5-Functions-of-the-re-module-(p.175)">&#182;</a></h2><p>Reminder: You can find things in strings/files without using regular expressions.</p>
+<p>Compare</p>
 <div class="highlight"><pre><span></span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">reg</span><span class="p">,</span> <span class="n">repl</span><span class="p">,</span> <span class="n">target_string</span><span class="p">)</span>
 </pre></div>
 <p>with</p>
@@ -13694,15 +13721,7 @@ ACGT
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.6-Groups-in-Regular-Expressions-(p.-180)">5.6 Groups in Regular Expressions (p. 180)<a class="anchor-link" href="#5.6-Groups-in-Regular-Expressions-(p.-180)">&#182;</a></h1><p>```python
-import re
-rexp = re.compile(r'(?[\w\s,.-\&amp;]*,\s(\d{4}))?')
-with open("bee_list.txt", "r") as f:
-    for line in f:
-        match = rexp.search(line)
-        if m:
-            print(m.group(1))
-        match = re.findall(r'something', line)[0]</p>
+<h2 id="Exercises-(p.-182)">Exercises (p. 182)<a class="anchor-link" href="#Exercises-(p.-182)">&#182;</a></h2><p><strong>Any comments or questions?</strong></p>
 
 </div>
 </div>
@@ -13710,8 +13729,8 @@ with open("bee_list.txt", "r") as f:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.7-Verbose-Regular-Expressions-and-5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">5.7 Verbose Regular Expressions and 5.8 The Quest for the Perfect Regular Expression (p. 181)<a class="anchor-link" href="#5.7-Verbose-Regular-Expressions-and-5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">&#182;</a></h1><p>How often have you filled a web form with, say, your personal ID number, only to be greeted with the message saying: "This is not a valid personal ID number"?</p>
-<p>The example for a pattern to match a (US) Zip code is non-exhaustive. As it stands, it handles three cases.</p>
+<h2 id="5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">5.8 The Quest for the Perfect Regular Expression (p. 181)<a class="anchor-link" href="#5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">&#182;</a></h2><p>How often have you filled a web form with, say, your personal ID number, only to be greeted with the message saying: "This is not a valid personal ID number"?</p>
+<p>The example for a pattern to match a (US) Zip code on p. 181 is non-exhaustive. As it stands, it handles three cases.</p>
 <div class="highlight"><pre><span></span><span class="mi">60637</span>
 <span class="mi">60637</span> <span class="mi">1503</span>
 <span class="mi">60637</span><span class="o">-</span><span class="mi">1503</span>
@@ -13724,7 +13743,7 @@ with open("bee_list.txt", "r") as f:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.7-Verbose-Regular-Expressions-and-5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">5.7 Verbose Regular Expressions and 5.8 The Quest for the Perfect Regular Expression (p. 181)<a class="anchor-link" href="#5.7-Verbose-Regular-Expressions-and-5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">&#182;</a></h1><p>What about?</p>
+<h2 id="5.7-Verbose-Regular-Expressions-and-5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">5.7 Verbose Regular Expressions and 5.8 The Quest for the Perfect Regular Expression (p. 181)<a class="anchor-link" href="#5.7-Verbose-Regular-Expressions-and-5.8-The-Quest-for-the-Perfect-Regular-Expression-(p.-181)">&#182;</a></h2><p>What about?</p>
 <div class="highlight"><pre><span></span><span class="mi">60637</span> <span class="o">-</span><span class="mi">1503</span>
 <span class="mi">60637</span><span class="o">-</span> <span class="mi">1503</span>
 <span class="mi">60637</span> <span class="o">-</span> <span class="mi">1503</span>
