@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: tor nov 12, 2020  03:47
+- Last modified: tis jan 19, 2021  03:14
 - Sign: JN
 
 ## Description
@@ -37,14 +37,14 @@ command:
 | Oct 01 | 14:00--15:00 | NRM KÖL lunchroom + Zoom | Introduction | NA |
 | Oct 08 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Unix | 1 |
 | Oct 15 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Version control (git) | 2 |
-| **Oct 29** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Basic programming (Python) | 3 |
-| **Nov 12** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Writing good code (Python) | 4 |
-| Nov 19 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Regular expressions (Python) | 5 |
-| **Dec 03** | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific computing (Python) | 6 |
-| Dec 10 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Scientific typesetting (LaTeX) | 7 |
-| **?** | ? | ? + Zoom | Statistical computing (R) | 8 |
-| **?** | ? | ? + Zoom | Data wrangling and visualization (R) | 9 |
-| ? | ? | ? + Zoom | Relational data bases (SQL) | 10 |
+| Oct 29 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Basic programming (Python) | 3 |
+| Nov 12 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Writing good code (Python) | 4 |
+| Nov 19 | 14:00--16:00 | Zoom | Regular expressions (Python) | 5 |
+| Dec 03 | 14:00--16:00 | Zoom | Scientific computing (Python) | 6 |
+| Dec 10 | 14:00--16:00 | Zoom | Scientific typesetting (LaTeX) | 7 |
+| **Feb 11** | 14:00--16:00 | Zoom | Statistical computing (R) | 8 |
+| **Feb 25** | 14:00--16:00 | Zoom | Data wrangling and visualization (R) | 9 |
+| **Mar 11** | 14:00--16:00 | Zoom | Relational data bases (SQL) | 10 |
 
 Note, all occasions (except the first: "Introduction") will be follow-up
 sessions where we will share problems, solutions, and experiences from
@@ -107,5 +107,5 @@ on line.
 
 ### How to apply:
 
-Send me an e-mail (emailto:Johan.Nylander) before September 26.
+Send me an e-mail (emailto:Johan.Nylander) before September 26 (2020).
 
