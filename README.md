@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: tis jan 19, 2021  03:16
+- Last modified: tis jan 19, 2021  03:48
 - Sign: JN
 
 ## Description
@@ -34,17 +34,17 @@ command:
 
 | Date | Time | Venue | Topic | Chapter |
 | --- | --- | --- | --- | --- |
-| Oct 01 2020 | 14:00--15:00 | NRM KÖL lunchroom + Zoom | Introduction | NA |
-| Oct 08 2020 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Unix | 1 |
-| Oct 15 2020 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Version control (git) | 2 |
-| Oct 29 2020 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Basic programming (Python) | 3 |
-| Nov 12 2020 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Writing good code (Python) | 4 |
-| Nov 19 2020 | 14:00--16:00 | Zoom | Regular expressions (Python) | 5 |
-| Dec 03 2020 | 14:00--16:00 | Zoom | Scientific computing (Python) | 6 |
-| Dec 10 2020 | 14:00--16:00 | Zoom | Scientific typesetting (LaTeX) | 7 |
-| **Feb 11 2021** | 14:00--16:00 | Zoom | Statistical computing (R) | 8 |
-| **Feb 25 2021** | 14:00--16:00 | Zoom | Data wrangling and visualization (R) | 9 |
-| **Mar 11 2021** | 14:00--16:00 | Zoom | Relational data bases (SQL) | 10 |
+| Oct 01 -20 | 14:00--15:00 | NRM KÖL lunchroom + Zoom | Introduction | NA |
+| Oct 08 -20 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Unix | 1 |
+| Oct 15 -20 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Version control (git) | 2 |
+| Oct 29 -20 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Basic programming (Python) | 3 |
+| Nov 12 -20 | 14:00--16:00 | NRM KÖL lunchroom + Zoom | Writing good code (Python) | 4 |
+| Nov 19 -20 | 14:00--16:00 | Zoom | Regular expressions (Python) | 5 |
+| Dec 03 -20 | 14:00--16:00 | Zoom | Scientific computing (Python) | 6 |
+| Dec 10 -20 | 14:00--16:00 | Zoom | Scientific typesetting (LaTeX) | 7 |
+| **Feb 11 -21** | 14:00--16:00 | Zoom | Statistical computing (R) | 8 |
+| **Feb 25 -21** | 14:00--16:00 | Zoom | Data wrangling and visualization (R) | 9 |
+| **Mar 11 -21** | 14:00--16:00 | Zoom | Relational data bases (SQL) | 10 |
 
 Note, all occasions (except the first: "Introduction") will be follow-up
 sessions where we will share problems, solutions, and experiences from
