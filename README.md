@@ -1,6 +1,6 @@
 # BIOinfo-course
 
-- Last modified: tis jan 19, 2021  03:48
+- Last modified: mån feb 22, 2021  02:38
 - Sign: JN
 
 ## Description
@@ -42,8 +42,8 @@ command:
 | Nov 19 -20 | 14:00--16:00 | Zoom | Regular expressions (Python) | 5 |
 | Dec 03 -20 | 14:00--16:00 | Zoom | Scientific computing (Python) | 6 |
 | Dec 10 -20 | 14:00--16:00 | Zoom | Scientific typesetting (LaTeX) | 7 |
-| **Feb 11 -21** | 14:00--16:00 | Zoom | Statistical computing (R) | 8 |
-| **Feb 25 -21** | 14:00--16:00 | Zoom | Data wrangling and visualization (R) | 9 |
+| Feb 11 -21 | 14:00--16:00 | Zoom | Statistical computing (R) | 8 |
+| **Feb 25 -21** | **13:00--15:00** | Zoom | Data wrangling and visualization (R) | 9 |
 | **Mar 11 -21** | 14:00--16:00 | Zoom | Relational data bases (SQL) | 10 |
 
 Note, all occasions (except the first: "Introduction") will be follow-up
